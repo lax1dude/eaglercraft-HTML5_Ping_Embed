@@ -95,7 +95,7 @@ class ServerEmbed {
 		this.tooltipCanvas.width = 64;
 		this.tooltipCanvas.height = 64;
 		this.tooltipCanvas.style.display = "none";
-		this.tooltipCanvas.style.position = "absolute";
+		this.tooltipCanvas.style.position = "fixed";
 		this.tooltipCanvas.style.zIndex = "100";
 		this.tooltipCanvas.style.pointerEvents = "none";
 		this.tooltipCtx = this.tooltipCanvas.getContext("2d");
@@ -110,8 +110,8 @@ class ServerEmbed {
 			self.mouseOver = true;
 			self.mouseX = e.offsetX / self.canvas.width * 256.0;
 			self.mouseY = e.offsetY / self.canvas.height * 38.0;
-			self.mousePageX = e.pageX;
-			self.mousePageY = e.pageY;
+			self.mousePageX = e.clientX;
+			self.mousePageY = e.clientY;
 		};
 		this.canvas.addEventListener("mouseover", mouseMove);
 		this.canvas.addEventListener("mousemove", mouseMove);
