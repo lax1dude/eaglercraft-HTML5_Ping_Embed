@@ -404,7 +404,7 @@ class ServerEmbed {
 						cg * CHAR_SHADOW_BRIGHTNESS, cb * CHAR_SHADOW_BRIGHTNESS);
 				var ox = x;
 				var ow = 0;
-				if(bold) this.drawColoredChar(x + 1, y + 1, c, ccc, italic);
+				if(bold) this.drawColoredChar(x + 1, y, c, ccc, italic);
 				x += (ow = this.drawColoredChar(x, y, c, ccc, italic));
 				if(bold) {
 					++x;
@@ -416,7 +416,7 @@ class ServerEmbed {
 				if(cr >= 250 && cg >= 250 && cb >= 250) {
 					var ox = x;
 					var ow = 0;
-					if(bold) this.drawChar(x + 0.5, y + 0.5, c, italic);
+					if(bold) this.drawChar(x + 1.0, y, c, italic);
 					x += (ow = this.drawChar(x, y, c, italic));
 					if(bold) {
 						++x;
@@ -428,7 +428,7 @@ class ServerEmbed {
 					var ccc = this.makeColor(cr,cg,cb);
 					var ox = x;
 					var ow = 0;
-					if(bold) this.drawColoredChar(x + 0.5, y + 0.5, c, ccc, italic);
+					if(bold) this.drawColoredChar(x + 1.0, y, c, ccc, italic);
 					x += (ow = this.drawColoredChar(x, y, c, ccc, italic));
 					if(bold) {
 						++x;
