@@ -4,7 +4,7 @@
 
 ![Eaglercraft HTML5 Ping Embed](https://i.gyazo.com/3db6a206bca69da3545a6083bc8aa7eb.gif)
 
-### Demo link: [https://g.eags.us/eaglercraft/ping.html](https://g.eags.us/eaglercraft/ping.html)
+### Demo link: [https://g.deev.is/eaglercraft/ping.html](https://g.deev.is/eaglercraft/ping.html)
 
 # How to install:
 
